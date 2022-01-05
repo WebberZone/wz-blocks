@@ -1,0 +1,31 @@
+{
+	"name": "wz-blocks",
+	"version": "0.1.0",
+	"description": "Plugin used to build blocks for WebberZone plugins",
+	"author": "WebberZone",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update",
+		"start:alerts": "wp-scripts start blocks/alerts/src/index.js --output-path=blocks/alerts/build/",
+		"build:alerts": "wp-scripts build blocks/alerts/src/index.js --output-path=blocks/alerts/build/",
+		"start:kb": "wp-scripts start blocks/kb/src/index.js --output-path=blocks/kb/build/",
+		"build:kb": "wp-scripts build blocks/kb/src/index.js --output-path=blocks/kb/build/"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^8.0.11",
+		"@wordpress/blocks": "^11.1.4",
+		"@wordpress/components": "^19.1.5",
+		"@wordpress/i18n": "^4.2.4",
+		"prettier": "^2.5.1"
+	},
+	"devDependencies": {
+		"@wordpress/prettier-config": "^1.1.1",
+		"@wordpress/scripts": "^19.2.2"
+	}
+}
