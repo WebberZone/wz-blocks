@@ -1,8 +1,8 @@
 ===  WebberZone Blocks Tester Plugin ===
 Contributors:      WebberZone
-Tags:              block
-Tested up to:      5.8.0
-Stable tag:        0.1.0
+Tags:              block, webberzone, popular posts, knowledge base
+Tested up to:      5.9
+Stable tag:        0.2.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,9 @@ This plugin is used to build blocks for WebberZone Plugins using the latest crea
 Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 0.2.0 =
+* Added Popular Posts block
 
 = 0.1.0 =
 * Release
