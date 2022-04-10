@@ -4,7 +4,7 @@
  * Description:       Plugin used to build blocks for WebberZone plugins.
  * Requires at least: 5.6
  * Requires PHP:      7.1
- * Version:           0.2.0
+ * Version:           0.3.0
  * Author:            WebberZone
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -24,9 +24,10 @@ function wz_register_blocks() {
 
 	// Register blocks in the format $dir => $render_callback.
 	$blocks = array(
-		'popular-posts' => 'render_tptn_block', // Popular Posts.
-		'kb'            => 'render_wzkb_block', // Knowledge Base.
-		'alerts'        => '', // Knowledge Base alerts.
+//		'popular-posts'   => 'render_tptn_block', // Popular Posts.
+//		'popular-authors' => 'render_wzpa_block', // Popular Authors.
+//		'kb'              => 'render_wzkb_block', // Knowledge Base.
+//		'alerts'          => '', // Knowledge Base alerts.
 	);
 
 	foreach ( $blocks as $dir => $render_callback ) {

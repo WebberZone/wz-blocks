@@ -1,0 +1,71 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "popular-authors/popular-authors",
+	"version": "1.0.0",
+	"title": "Popular Authors",
+	"category": "design",
+	"icon": "admin-users",
+	"keywords": ["popular authors", "author", "top 10"],
+	"description": "Show the list of popular authors",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"className": {
+			"type": "string",
+			"default": ""
+		},
+		"number": {
+			"type": "string",
+			"default": ""
+		},
+		"daily": {
+			"type": "boolean",
+			"default": false
+		},
+		"daily_range": {
+			"type": "number",
+			"default": 1
+		},
+		"hour_range": {
+			"type": "number",
+			"default": 0
+		},
+		"offset": {
+			"type": "string",
+			"default": ""
+		},
+		"showOptionCount": {
+			"type": "boolean",
+			"default": false
+		},
+		"showFullName": {
+			"type": "boolean",
+			"default": false
+		},
+		"excludeAdmin": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideEmptyAuthors": {
+			"type": "boolean",
+			"default": true
+		},
+		"include": {
+			"type": "string",
+			"default": ""
+		},
+		"exclude": {
+			"type": "string",
+			"default": ""
+		},
+		"other_attributes": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "popular-authors",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css"
+}
