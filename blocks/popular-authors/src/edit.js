@@ -56,6 +56,7 @@ export default function Edit({ attributes, setAttributes }) {
 		offset,
 		showOptionCount,
 		showFullName,
+		showAvatar,
 		excludeAdmin,
 		hideEmptyAuthors,
 		include,
@@ -66,8 +67,7 @@ export default function Edit({ attributes, setAttributes }) {
 	const blockProps = useBlockProps();
 	const onChangeNumber = (newNumber) => {
 		setAttributes({
-			number:
-				undefined === newNumber ? '' : newNumber,
+			number: undefined === newNumber ? '' : newNumber,
 		});
 	};
 	const toggleDaily = () => {
@@ -88,6 +88,9 @@ export default function Edit({ attributes, setAttributes }) {
 	const toggleShowFullName = () => {
 		setAttributes({ showFullName: !showFullName });
 	};
+	const toggleShowAvatar = () => {
+		setAttributes({ showAvatar: !showAvatar });
+	};
 	const toggleExcludeAdmin = () => {
 		setAttributes({ excludeAdmin: !excludeAdmin });
 	};
@@ -96,14 +99,12 @@ export default function Edit({ attributes, setAttributes }) {
 	};
 	const onChangeInclude = (newInclude) => {
 		setAttributes({
-			include:
-				undefined === newInclude ? '' : newInclude,
+			include: undefined === newInclude ? '' : newInclude,
 		});
 	};
 	const onChangeExclude = (newExclude) => {
 		setAttributes({
-			exclude:
-				undefined === newExclude ? '' : newExclude,
+			exclude: undefined === newExclude ? '' : newExclude,
 		});
 	};
 	const onChangeOtherAttributes = (newOtherAttributes) => {
@@ -211,6 +212,20 @@ export default function Edit({ attributes, setAttributes }) {
 					<PanelRow>
 						<fieldset>
 							<ToggleControl
+								label={__('Show Avatar', 'popular-authors')}
+								help={
+									showAvatar
+										? __('Avatar displayed', 'popular-authors')
+										: __('No avatar displayed', 'popular-authors')
+								}
+								checked={showAvatar}
+								onChange={toggleShowAvatar}
+							/>
+						</fieldset>
+					</PanelRow>
+					<PanelRow>
+						<fieldset>
+							<ToggleControl
 								label={__('Exclude admin', 'popular-authors')}
 								help={
 									excludeAdmin
@@ -228,8 +243,14 @@ export default function Edit({ attributes, setAttributes }) {
 								label={__('Hide authors with no posts', 'popular-authors')}
 								help={
 									hideEmptyAuthors
-										? __('Authors with no posts are excluded', 'popular-authors')
-										: __('Authors with no posts are included', 'popular-authors')
+										? __(
+												'Authors with no posts are excluded',
+												'popular-authors'
+										  )
+										: __(
+												'Authors with no posts are included',
+												'popular-authors'
+										  )
 								}
 								checked={hideEmptyAuthors}
 								onChange={togglehideEmptyAuthors}

@@ -44,6 +44,10 @@
 			"type": "boolean",
 			"default": false
 		},
+		"showAvatar": {
+			"type": "boolean",
+			"default": false
+		},
 		"excludeAdmin": {
 			"type": "boolean",
 			"default": false
