@@ -1,0 +1,4 @@
+{
+  "singleQuote": true,
+  "extends": ["@wordpress/prettier-config"]
+}
