@@ -1,8 +1,8 @@
 ===  WebberZone Blocks Tester Plugin ===
 Contributors:      WebberZone
 Tags:              block, webberzone, popular posts, knowledge base
-Tested up to:      5.9
-Stable tag:        0.4.1
+Tested up to:      6.0
+Stable tag:        0.5
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,9 @@ This plugin is used to build blocks for WebberZone Plugins using the latest crea
 Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 0.5 =
+* Updated Popular Posts block to be wrapped in Disabled tags and to also have urlQueryArgs to set locale to site
 
 = 0.4.1 =
 * Add placeholder for Related Posts block
