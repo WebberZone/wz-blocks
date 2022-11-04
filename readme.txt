@@ -18,6 +18,10 @@ Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
 
+= 0.5.2 =
+* Related Posts block is wrapped in Disabled tags
+* Related Posts block has a new setting to set a custom heading
+
 = 0.5.1 =
 * Popular Posts block setting to select style by block
 
