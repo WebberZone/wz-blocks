@@ -24,14 +24,14 @@
 		"build:wzpa": "wp-scripts build blocks/popular-authors/src/index.js --output-path=blocks/popular-authors/build/"
 	},
 	"dependencies": {
-		"@wordpress/block-editor": "^10.3.0",
-		"@wordpress/blocks": "^11.19.0",
-		"@wordpress/components": "^21.3.0",
-		"@wordpress/i18n": "^4.20.0",
-		"prettier": "^2.7.1"
+		"@wordpress/block-editor": "^11.8.0",
+		"@wordpress/blocks": "^12.8.0",
+		"@wordpress/components": "^23.8.0",
+		"@wordpress/i18n": "^4.31.0",
+		"prettier": "^2.8.7"
 	},
 	"devDependencies": {
-		"@wordpress/prettier-config": "^2.3.0",
-		"@wordpress/scripts": "^24.4.0"
+		"@wordpress/prettier-config": "^2.14.0",
+		"@wordpress/scripts": "^26.2.0"
 	}
 }
