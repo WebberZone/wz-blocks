@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "webberzone/followed-posts",
+	"version": "1.0.0",
+	"title": "WebberZone Followed Posts",
+	"category": "widgets",
+	"icon": "editor-ul",
+	"keywords": ["followed posts", "posts", "where did they go from here"],
+	"description": "Display the Followed Posts",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"className": {
+			"type": "string",
+			"default": ""
+		},
+		"heading": {
+			"type": "boolean",
+			"default": false
+		},
+		"title": {
+			"type": "string",
+			"default": "<h3>Followed Posts</h3>"
+		},
+		"limit": {
+			"type": "string",
+			"default": 6
+		},
+		"show_excerpt": {
+			"type": "boolean",
+			"default": false
+		},
+		"show_author": {
+			"type": "boolean",
+			"default": false
+		},
+		"show_date": {
+			"type": "boolean",
+			"default": false
+		},
+		"wherego_styles": {
+			"type": "string",
+			"default": "no_style"
+		},
+		"post_thumb_op": {
+			"type": "string",
+			"default": "inline"
+		},
+		"other_attributes": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "where-did-they-go-from-here",
+	"editorScript": "file:./build/index.js"
+}

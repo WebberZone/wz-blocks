@@ -1,6 +1,6 @@
 {
 	"name": "wz-blocks",
-	"version": "0.4.0",
+	"version": "0.6.0",
 	"description": "Plugin used to build blocks for WebberZone plugins",
 	"author": "WebberZone",
 	"license": "GPL-2.0-or-later",
@@ -20,18 +20,20 @@
 		"build:kb": "wp-scripts build blocks/kb/src/index.js --output-path=blocks/kb/build/",
 		"start:pop": "wp-scripts start blocks/popular-posts/src/index.js --output-path=blocks/popular-posts/build/",
 		"build:pop": "wp-scripts build blocks/popular-posts/src/index.js --output-path=blocks/popular-posts/build/",
+		"start:wfp": "wp-scripts start blocks/followed-posts/src/index.js --output-path=blocks/followed-posts/build/",
+		"build:wfp": "wp-scripts build blocks/followed-posts/src/index.js --output-path=blocks/followed-posts/build/",
 		"start:wzpa": "wp-scripts start blocks/popular-authors/src/index.js --output-path=blocks/popular-authors/build/",
 		"build:wzpa": "wp-scripts build blocks/popular-authors/src/index.js --output-path=blocks/popular-authors/build/"
 	},
 	"dependencies": {
-		"@wordpress/block-editor": "^11.8.0",
-		"@wordpress/blocks": "^12.8.0",
-		"@wordpress/components": "^23.8.0",
-		"@wordpress/i18n": "^4.31.0",
-		"prettier": "^2.8.7"
+		"@wordpress/block-editor": "^12.10.0",
+		"@wordpress/blocks": "^12.19.0",
+		"@wordpress/components": "^25.8.0",
+		"@wordpress/i18n": "^4.42.0",
+		"prettier": "^3.0.3"
 	},
 	"devDependencies": {
-		"@wordpress/prettier-config": "^2.14.0",
-		"@wordpress/scripts": "^26.2.0"
+		"@wordpress/prettier-config": "^2.25.0",
+		"@wordpress/scripts": "^26.13.0"
 	}
 }

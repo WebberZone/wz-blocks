@@ -1,8 +1,8 @@
 ===  WebberZone Blocks Tester Plugin ===
 Contributors:      WebberZone
 Tags:              block, webberzone, popular posts, knowledge base
-Tested up to:      6.2
-Stable tag:        0.5.3
+Tested up to:      6.3
+Stable tag:        0.6.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,9 @@ This plugin is used to build blocks for WebberZone Plugins using the latest crea
 Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 0.6.0 =
+* New block for WebberZone Followed Posts
 
 = 0.5.2 =
 * Knowledge Base Alerts block default now shows the correct background and colour
